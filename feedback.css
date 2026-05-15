@@ -1,0 +1,270 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+
+    min-height:100vh;
+
+    background:linear-gradient(135deg,#1e3c72,#2a5298,#ff00cc);
+
+}
+
+.navbar{
+
+    width:100%;
+
+    padding:15px 30px;
+
+    background:rgba(255,255,255,0.2);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+}
+
+.search-bar input{
+
+    width:300px;
+
+    padding:12px 18px;
+
+    border:none;
+
+    border-radius:30px;
+
+    outline:none;
+
+    font-size:16px;
+
+    border:2px solid blue;
+
+}
+
+
+.menu{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.menu li{
+
+    list-style:none;
+
+}
+
+.menu li a{
+
+    text-decoration:none;
+
+    color:white;
+
+    padding:10px 18px;
+
+    border-radius:10px;
+
+    transition:0.3s;
+
+    display:block;
+
+    font-size:18px;
+
+}
+
+.menu li a:hover,
+.menu li a.active{
+
+    background:white;
+
+    color:black;
+
+}
+
+
+.feedback-box{
+
+    width:80%;
+
+    max-width:450px;
+
+    background:rgba(66,133,244,0.9);
+
+    margin:25px auto;
+
+    border-radius:8px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.3);
+
+}
+
+.feedback-box h1{
+
+    background:#cfd8e3;
+
+    text-align:center;
+
+    padding:15px;
+
+    font-size:25px;
+
+    color:black;
+
+}
+
+.feedback-box form{
+
+    padding:20px 30px;
+
+}
+
+.input-box{
+
+    margin-bottom:15px;
+
+}
+
+.input-box label{
+
+    display:block;
+
+    margin-bottom:6px;
+
+    color:black;
+
+    font-size:15px;
+
+}
+
+.input-box input,
+.input-box textarea{
+
+    width:100%;
+
+    padding:10px;
+
+    border:2px solid black;
+
+    border-radius:8px;
+
+    outline:none;
+
+    font-size:15px;
+
+}
+
+.input-box textarea{
+
+    resize:none;
+
+}
+
+.btn-box{
+
+    width:100%;
+
+    text-align:center;
+
+    margin-top:15px;
+
+}
+
+.btn-box button{
+
+    width:260px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#6c5ce7;
+
+    color:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+.btn-box button:hover{
+
+    background:#0984e3;
+
+}
+
+@media(max-width:768px){
+
+    .navbar{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        text-align:center;
+
+    }
+
+    .search-bar{
+
+        width:100%;
+
+    }
+
+    .search-bar input{
+
+        width:100%;
+
+    }
+
+    .menu{
+
+        justify-content:center;
+
+    }
+
+    .feedback-box{
+
+        width:95%;
+
+        margin:40px auto;
+
+    }
+
+    .feedback-box h1{
+
+        font-size:35px;
+
+    }
+
+    .feedback-box form{
+
+        padding:30px 20px;
+
+    }
+
+    .btn-box button{
+
+        width:100%;
+
+    }
+
+}
